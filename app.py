@@ -90,5 +90,5 @@ def upload():
     return jsonify({"error": "The uploaded PDF file is not valid!"}), 400
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=False, host="0.0.0.0")
     
